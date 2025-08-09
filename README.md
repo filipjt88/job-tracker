@@ -1,38 +1,39 @@
-# 📌 Job Tracker
+📌 Job Tracker
+Job Tracker is a React.js web application that allows you to track and organize job applications and opportunities.
+This project serves as practice for React, application state management, data storage, and working with APIs.
 
-Job Tracker je web aplikacija napravljena u React.js koja omogućava praćenje i organizaciju poslova i prijava za posao.  
-Ovaj projekat služi kao vežba iz React-a, upravljanja stanjem aplikacije, čuvanja podataka i rada sa API-jem.
+🚀 Technologies Used
+React.js (Vite) – fast and modern frontend framework
 
----
+Bootstrap 5 – modern and responsive design
 
-## 🚀 Tehnologije koje koristimo
-- **React.js** (Vite) – brzi i moderni frontend framework
-- **Bootstrap 5** – moderan i responzivan dizajn
-- **JavaScript (ES6+)** – logika aplikacije
-- **LocalStorage** – čuvanje podataka na klijentskoj strani
-- *(Opcionalno)* **PHP + MySQL** – backend i baza podataka za trajno čuvanje
+JavaScript (ES6+) – application logic
 
----
+LocalStorage – client-side data storage
 
-## 🎯 Funkcionalnosti
-- Dodavanje novih poslova (naziv, kompanija, pozicija, status)
-- Brisanje postojećih poslova
-- Označavanje posla kao završenog
-- Filtriranje i pretraga poslova
-- Čuvanje podataka u LocalStorage-u
-- *(Napredno)* Slanje i preuzimanje podataka preko API-ja (PHP backend)
+(Optional) PHP + MySQL – backend and database for persistent data storage
 
----
+🎯 Features
+Add new jobs (title, company, position, status)
 
-## 📂 Struktura projekta
+Delete existing jobs
 
+Mark jobs as completed
+
+Filter and search jobs
+
+Save data in LocalStorage
+
+(Advanced) Send and fetch data via API (PHP backend)
+
+📂 Project Structure
 job-tracker/
 │── src/
-│ ├── components/
-│ │ ├── JobForm.jsx
-│ │ ├── JobList.jsx
-│ ├── App.jsx
-│ ├── main.jsx
+│   ├── components/
+│   │   ├── JobForm.jsx
+│   │   ├── JobList.jsx
+│   ├── App.jsx
+│   ├── main.jsx
 │── public/
 │── package.json
 │── README.md
