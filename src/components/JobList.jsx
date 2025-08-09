@@ -1,6 +1,6 @@
 function JobList({ jobs, deleteJob, startEditJob }) {
     if (jobs.length === 0) {
-        return <h2 className="text-center py-5">No jobs added yet.</h2>;
+        return <h2 className="text-center py-5 mt-5">No jobs added yet.</h2>;
     }
 
     return (
