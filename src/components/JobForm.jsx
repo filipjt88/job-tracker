@@ -40,7 +40,7 @@ function JobForm({ addJob, editJob }) {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-9 offset-3">
+                <div className="col-md-12">
                     <form onSubmit={handleSubmit} className="mb-4">
                         <div className="row g-3">
                             <div className="col-md-4">
@@ -52,7 +52,7 @@ function JobForm({ addJob, editJob }) {
                                     onChange={(e) => setTitle(e.target.value)}
                                 />
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-md-4">
                                 <input
                                     type="text"
                                     className="form-control"
@@ -61,7 +61,7 @@ function JobForm({ addJob, editJob }) {
                                     onChange={(e) => setCompany(e.target.value)}
                                 />
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-md-4">
                                 <select
                                     className="form-select"
                                     value={status}
@@ -73,8 +73,8 @@ function JobForm({ addJob, editJob }) {
                                     <option value="Rejected">Rejected</option>
                                 </select>
                             </div>
-                            <div className="col-md-2">
-                                <button type="submit" className="btn btn-primary w-100">
+                            <div className="col-md-3">
+                                <button type="submit" className="btn btn-primary form-control">
                                     {editJob ? 'Update' : 'Add'}
                                 </button>
                             </div>
