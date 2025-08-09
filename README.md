@@ -1,12 +1,38 @@
-# React + Vite
+# 📌 Job Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Job Tracker je web aplikacija napravljena u React.js koja omogućava praćenje i organizaciju poslova i prijava za posao.  
+Ovaj projekat služi kao vežba iz React-a, upravljanja stanjem aplikacije, čuvanja podataka i rada sa API-jem.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tehnologije koje koristimo
+- **React.js** (Vite) – brzi i moderni frontend framework
+- **Bootstrap 5** – moderan i responzivan dizajn
+- **JavaScript (ES6+)** – logika aplikacije
+- **LocalStorage** – čuvanje podataka na klijentskoj strani
+- *(Opcionalno)* **PHP + MySQL** – backend i baza podataka za trajno čuvanje
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Funkcionalnosti
+- Dodavanje novih poslova (naziv, kompanija, pozicija, status)
+- Brisanje postojećih poslova
+- Označavanje posla kao završenog
+- Filtriranje i pretraga poslova
+- Čuvanje podataka u LocalStorage-u
+- *(Napredno)* Slanje i preuzimanje podataka preko API-ja (PHP backend)
+
+---
+
+## 📂 Struktura projekta
+
+job-tracker/
+│── src/
+│ ├── components/
+│ │ ├── JobForm.jsx
+│ │ ├── JobList.jsx
+│ ├── App.jsx
+│ ├── main.jsx
+│── public/
+│── package.json
+│── README.md
