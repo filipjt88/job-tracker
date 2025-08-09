@@ -1,4 +1,4 @@
-function JobList({ jobs, deleteJob }) {
+function JobList({ jobs, deleteJob, startEditJob }) {
     if (jobs.length === 0) {
         return <p className="text-center">No jobs added yet.</p>;
     }
@@ -10,7 +10,7 @@ function JobList({ jobs, deleteJob }) {
                     <th>Job Title</th>
                     <th>Company</th>
                     <th>Status</th>
-                    <th style={{ width: "100px" }}>Actions</th>
+                    <th style={{ width: '140px' }}>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,7 +21,13 @@ function JobList({ jobs, deleteJob }) {
                         <td>{job.status}</td>
                         <td>
                             <button
-                                className="btn btn-danger btn-sm"
+                                className="btn btn-sm btn-warning me-2"
+                                onClick={() => startEditJob(index)}
+                            >
+                                Edit
+                            </button>
+                            <button
+                                className="btn btn-sm btn-danger"
                                 onClick={() => deleteJob(index)}
                             >
                                 Delete
