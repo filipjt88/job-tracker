@@ -1,8 +1,10 @@
+// Job list
 function JobList({ jobs, deleteJob, startEdit }) {
     if (jobs.length === 0) {
         return <p className="text-center">No jobs yet. Add one above 👆</p>;
     }
 
+    // Table
     return (
         <div className="table-responsive">
             <table className="table table-striped align-middle">
