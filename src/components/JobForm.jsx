@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+// Job Form
 function JobForm({ addJob, editJob, updateJob }) {
     const [title, setTitle] = useState("");
     const [company, setCompany] = useState("");
@@ -17,6 +18,8 @@ function JobForm({ addJob, editJob, updateJob }) {
         }
     }, [editJob]);
 
+
+    // HandleSubmit
     const handleSubmit = (e) => {
         e.preventDefault();
 
