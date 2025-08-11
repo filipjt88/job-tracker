@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// Job filters
 function JobFilters({ onFilterChange, onReset }) {
     const [searchTerm, setSearchTerm] = useState("");
     const [status, setStatus] = useState("");
@@ -20,6 +21,7 @@ function JobFilters({ onFilterChange, onReset }) {
         onFilterChange({ searchTerm: value, status });
     };
 
+    // Change handle status
     const handleStatusChange = (e) => {
         const value = e.target.value;
         setStatus(value);
